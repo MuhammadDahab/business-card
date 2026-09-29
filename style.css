@@ -172,6 +172,7 @@ h2::after { content: ""; flex: 1; height: 1px; background: var(--border); }
 .tag.gh { background: #30363d; }
 .tag.tg { background: #26a5e4; }
 .tag.yt { background: #ff0033; }
+.tag.wc { background: #07c160; }
 
 .btn {
   margin-top: 12px;
