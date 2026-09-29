@@ -170,6 +170,8 @@ h2::after { content: ""; flex: 1; height: 1px; background: var(--border); }
 .tag.fb { background: #1877f2; }
 .tag.ig { background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af); }
 .tag.gh { background: #30363d; }
+.tag.tg { background: #26a5e4; }
+.tag.yt { background: #ff0033; }
 
 .btn {
   margin-top: 12px;
