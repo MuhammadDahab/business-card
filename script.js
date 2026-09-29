@@ -92,6 +92,16 @@ document.querySelector('[data-kind="whatsapp"]').addEventListener("click", async
   catch { toast(`WhatsApp: ${CONFIG.whatsappHandle}`); }
 });
 
+// Copy-only handles (e.g. WeChat has no public profile link)
+document.querySelectorAll("[data-copy]").forEach((el) => {
+  el.addEventListener("click", async (e) => {
+    e.preventDefault();
+    const v = el.dataset.copy, label = el.dataset.label || "ID";
+    try { await navigator.clipboard.writeText(v); toast(`\u2713 copied ${label}: ${v}`); }
+    catch { toast(`${label}: ${v}`); }
+  });
+});
+
 // vCard download
 $("#vcard").addEventListener("click", () => {
   const lines = [
@@ -106,6 +116,7 @@ $("#vcard").addEventListener("click", () => {
     "URL;TYPE=Instagram:https://www.instagram.com/ig.muhammaddahab/",
     "URL;TYPE=Telegram:https://t.me/MuhammadDahab",
     "URL;TYPE=YouTube:https://www.youtube.com/@muhammaddahab",
+    "X-WECHAT:muhammaddahab",
     "URL;TYPE=Facebook:https://www.facebook.com/FB.MuhammadDahab/",
     CONFIG.whatsappNumber ? `TEL;TYPE=CELL:+${CONFIG.whatsappNumber}` : `NOTE:WhatsApp ${CONFIG.whatsappHandle}`,
     "END:VCARD",
