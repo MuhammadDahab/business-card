@@ -126,7 +126,7 @@ $("#vcard").addEventListener("click", () => {
   const blob = new Blob([lines.join("\r\n")], { type: "text/vcard" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
-  a.download = "muhammad-dahab.vcf";
+  a.download = "Muhammad-Dahab.vcf";
   a.click();
   URL.revokeObjectURL(a.href);
   toast("✓ contact saved");
