@@ -118,7 +118,7 @@ $("#vcard").addEventListener("click", () => {
     "URL;TYPE=X:https://x.com/zMuhammadDahab",
     "URL;TYPE=Telegram:https://t.me/MuhammadDahab",
     "URL;TYPE=YouTube:https://www.youtube.com/@muhammaddahab",
-    "X-WECHAT:muhammaddahab",
+    "X-WECHAT:MuhammadDahab",
     "URL;TYPE=Facebook:https://www.facebook.com/zMuhammadDahab",
     CONFIG.whatsappNumber ? `TEL;TYPE=CELL:+${CONFIG.whatsappNumber}` : `NOTE:WhatsApp ${CONFIG.whatsappHandle}`,
     "END:VCARD",
