@@ -3,7 +3,7 @@ const CONFIG = {
   // رقم الواتساب بالصيغة الدولية من غير + أو مسافات (مثال: "201xxxxxxxxx").
   // لو سبته فاضي، الضغط على الواتساب هينسخ اسم المستخدم بدل ما يفتح شات.
   whatsappNumber: "",
-  whatsappHandle: "@muhammad.dahab",
+  whatsappHandle: "@zMuhammadDahab",
 };
 
 // منتجات أمازون مصر — غيّر/زوّد هنا
